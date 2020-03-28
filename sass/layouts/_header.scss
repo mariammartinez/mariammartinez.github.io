@@ -1,0 +1,14 @@
+.header{
+    height:120px;
+    margin:auto;
+    text-align: center;
+    width:100%;
+    font-size:4em;
+    //@include border;
+    @include fond-principal;
+        a{
+            color:$Couleurlettres-omf;         
+
+         }  
+}
+    

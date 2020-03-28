@@ -1,0 +1,166 @@
+@mixin feuilles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;  
+    align-items: center;
+    justify-content: center;
+}
+@mixin pages {
+    width: 25%;
+    align-items: center;
+    margin: 10px 60px 10px 70px;
+    box-sizing: border-box;
+    height: 450px;
+    text-align: center;
+}
+@mixin border-shadow{
+    box-shadow: -8px 4px 38px -3px gray; 
+}
+
+@mixin border{
+    border: 2px solid black;  
+}
+
+@mixin fond-principal {
+    background-color: $Couleurfond-omf;
+    color: $Couleurlettres-omf;
+    font-family: $fontohmyfood;
+    margin-bottom: 30px;
+}
+
+@mixin btn-prochainement{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin orientationtext-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin fond-menu($couleur){
+    background-color: $couleur;
+    padding: 20px;   
+}
+ 
+@mixin gradient-text($color){
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+
+@mixin textecolormenu1note{
+    color: $colornote;   
+}
+
+@mixin text-police($font){
+    font-family: $font;
+    font-size: 1.3em;   
+}
+@mixin btnmenu {
+    font-size: 2em;
+    font-family: $fontohmyfood;
+}
+
+@mixin displaymenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+@mixin carte-recette {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin dessertsansprix {
+    text-align: start;    
+}
+
+@mixin typomenus134 {
+    font-family: $recettesmenu134;  
+}
+
+@mixin titremenucarte($font){
+    font-family: $font;
+    font-size: 3em;
+}
+
+@mixin typomenu2($color){
+    color: $color;
+    font-family: $fontohmyfood;  
+}
+
+
+@mixin trait($color) {
+    background-color: $color;
+    height: 0.2em;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    align-self: center;  
+}
+
+@mixin trait_display{
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+@mixin trait_degra($color){
+    background: $color;
+    height: 0.2em;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    align-self: center; 
+}
+@mixin menuzoom {
+    transition: $animate;      
+        &:hover{
+        transform: scale(2);
+        opacity: 1;
+        }
+}
+
+@mixin underline($color){
+    transition: $animate;
+    position: relative;
+    display: block;
+    &::after{
+        content: "";
+        border-bottom: 3px $color solid;
+        display: block;
+        width: 0;
+        transition: $animate;
+    }
+    &:hover::after{    
+        width: 100%;   
+    } 
+}
+
+@mixin bounce_keyframe {
+    @keyframes bounce{
+        0% {transform: translateY(0);}
+        50%  {transform: translateY(-5px);}
+        80%   {transform: translateY(-15px);}
+    }    
+}
+
+@mixin bounce_animation {
+    position: relative;
+    animation: bounce 0.7s ease infinite;
+    
+}

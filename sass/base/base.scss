@@ -1,0 +1,263 @@
+#menus{
+    @include feuilles;
+    //@include border;
+}
+
+.menu1note{
+    @include border-shadow;
+    @include pages;
+    @include orientationtext-menu;
+    @include fond-menu($couleurfond-m1note);
+    @include textecolormenu1note;
+    @include text-police($fontmenu1note);
+
+}
+.nota{
+    @include textecolormenu1note;
+}
+
+.fa-music{
+    @include gradient-text ($colormusic);
+    font-size: 2em;
+}
+
+.menu2chic{
+    @include border-shadow;
+    @include pages;
+    @include orientationtext-menu;
+    @include fond-menu($couleurfond-m2chic);
+    @include text-police($fontmenu2chic);
+    h2{
+        @include gradient-text($colorchic);
+        
+    }
+}
+.menu3delice{
+    @include border-shadow;
+    @include pages;
+    @include orientationtext-menu;
+    @include fond-menu ($couleurfond-m3delice);
+    @include text-police($fontmenu3delice);
+    h2{
+        @include gradient-text($colordelice);
+    }
+}
+
+.menu4palette{
+    @include border-shadow;
+    @include pages;
+    @include orientationtext-menu;
+    @include fond-menu ($couleurfond-m4palette);
+    @include text-police ($fontmenu4palette);
+    h2{
+        @include gradient-text($colorpalette);
+    }
+}
+
+.menubtn{
+    @include btnmenu;
+    transition: all .2s ease-in-out; 
+    
+    &:hover{
+        transform: scale(2);
+        opacity: 0.2;
+    }
+}
+
+.prochainement{
+    @include fond-principal;
+    @include btn-prochainement;
+}
+a{
+    text-decoration: none;    
+   } 
+   
+#menupalette {
+    @include border-shadow;
+    @include displaymenu;
+    @include fond-menu($couleurfond-m4palette);
+    h1{
+        @include gradient-text($colorpalette);
+        @include titremenucarte($fontmenu4palette); 
+    }
+}
+.underlinepalette{
+    @include underline (black);
+}
+
+.traitpaletteg{
+    @include trait_degra($colortraitpaletteg);
+}
+.traitpaletted{
+    @include trait_degra($colortraitpaletted);
+}
+
+
+.recettes {
+    @include carte-recette;
+}
+
+#menunote {
+    @include border-shadow;
+    @include displaymenu;
+    @include fond-menu($couleurfond-m1note);
+    h1{
+        @include gradient-text($colornote);
+        @include titremenucarte($fontmenu1note);
+    }  
+}
+.trait_menu{
+    @include trait_display;
+}
+.underlinenote{
+    @include underline($colornote);
+}
+
+.dessert {
+    @include dessertsansprix;
+}
+.traitnote {
+    @include trait ($colornote);
+}
+
+#menuchic {
+    @include border-shadow;
+    @include displaymenu;
+    @include fond-menu($couleurfond-m2chic);
+    h1{
+        @include gradient-text($colorchic);
+        @include titremenucarte($fontmenu2chic);
+    } 
+}
+.trait_menu{
+    @include trait_display;
+}
+
+.typomenu2entre {
+    @include typomenu2($colorchicentree);
+}
+.typomenu2plat {
+    @include typomenu2($colorchicplat);
+}
+.typomenu2dessert {
+    @include typomenu2 ($colorchicdessert);
+}
+.traitchicentree{
+    @include trait($colorchicentree);
+}
+.underlinechicentree{
+    @include underline ($colorchicentree);
+}  
+.traitchicplat{
+    @include trait ($colorchicplat);
+}
+.underlinechicplat{   
+    @include underline ($colorchicplat);
+}
+.traitchicdess{
+    @include trait ($colorchicdessert);
+}
+.underlinechicdess{
+    @include underline ($colorchicdessert);
+}
+
+#menudelice{
+    @include border-shadow;
+    @include displaymenu;
+    @include fond-menu($couleurfond-m3delice);
+    h1 {
+        @include gradient-text($colordelice);
+        @include titremenucarte($fontmenu3delice); 
+    }
+}
+.trait_menu{
+    @include trait_display;
+}
+
+.traitdeli_entree{
+    @include trait ($colordelientree);
+}
+.underlinedelientree{
+    @include underline ($colordelientree);
+}
+.traitdeli_plat{
+    @include trait ($colordeliplat);
+}
+.underlinedeliplat{
+    @include underline ($colordeliplat);
+}
+.traitdeli_dess{
+    @include trait ($colordelidess);
+}
+.underlinedelidess{
+    @include underline ($colordelidess);
+}
+
+.carte-col{
+    @include typomenus134
+}
+
+.bounce{
+    @include bounce_animation;
+    @include bounce_keyframe;
+}
+
+.bounce2{
+    @include bounce_animation;  
+    animation-delay: 0.8s;
+    @include bounce_keyframe;
+}
+
+.bounce3{
+    @include bounce_animation;
+    animation-delay: 0.9s;
+    @include bounce_keyframe;
+}
+
+@media screen and (max-width: 1024px){
+  .menu1note, .menu2chic, .menu3delice, .menu4palette{
+    width: 40%; 
+    margin: 5%;
+    h2{
+          font-size: 2em;
+      }
+  }
+  #menunote,#menuchic,#menudelice,#menupalette{
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 852px){
+    .menu1note,.menu2chic,.menu3delice,.menu4palette{
+    width: 90%;
+    display: flex;
+    margin: 0 0 10% 0;
+    }
+    #menunote,#menuchic,#menudelice,#menupalette{
+        max-width: 80%;
+        font-size: 1em;
+        h1{
+            font-size: 2em;
+        }
+    }
+    
+    .footer{
+        font-size: 1em;
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+        font-size: 3.5em;
+
+    }
+
+    .prochainement{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .recettes{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,643 @@
+/*couleur fond menus*/
+/*couleurs police menus*/
+/*police menus page d'accueil*/
+/* police recettes menus*/
+/*color menu chic*/
+/*color menu delice*/
+/*color background palette */
+.footer {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 30px;
+  /*position:fixed;
+  bottom: 0;*/
+  background-color: #569c87;
+  color: #f1c64d;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 30px;
+}
+.footer a {
+  color: #f1c64d;
+  display: block;
+  align-self: center;
+}
+.footer a:hover {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.header {
+  height: 120px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  font-size: 4em;
+  background-color: #569c87;
+  color: #f1c64d;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 30px;
+}
+.header a {
+  color: #f1c64d;
+}
+
+#menus {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu1note {
+  box-shadow: -8px 4px 38px -3px gray;
+  width: 25%;
+  align-items: center;
+  margin: 10px 60px 10px 70px;
+  box-sizing: border-box;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fcdfda;
+  padding: 20px;
+  color: #411f19;
+  font-family: "Croissant One", cursive;
+  font-size: 1.3em;
+}
+
+.nota {
+  color: #411f19;
+}
+
+.fa-music {
+  background: -webkit-linear-gradient(0deg, #f36704 0%, #f1b93e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+}
+
+.menu2chic {
+  box-shadow: -8px 4px 38px -3px gray;
+  width: 25%;
+  align-items: center;
+  margin: 10px 60px 10px 70px;
+  box-sizing: border-box;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff5fe;
+  padding: 20px;
+  font-family: "Gelasio", serif;
+  font-size: 1.3em;
+}
+.menu2chic h2 {
+  background: -webkit-linear-gradient(0deg, #f36704 0%, #6f37df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu3delice {
+  box-shadow: -8px 4px 38px -3px gray;
+  width: 25%;
+  align-items: center;
+  margin: 10px 60px 10px 70px;
+  box-sizing: border-box;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3em;
+}
+.menu3delice h2 {
+  background: -webkit-linear-gradient(0deg, #121ae8 5%, #1eaae8 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu4palette {
+  box-shadow: -8px 4px 38px -3px gray;
+  width: 25%;
+  align-items: center;
+  margin: 10px 60px 10px 70px;
+  box-sizing: border-box;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fdfffd;
+  padding: 20px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.3em;
+}
+.menu4palette h2 {
+  background: -webkit-linear-gradient(0deg, #308d26 0%, #c6f441 68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menubtn {
+  font-size: 2em;
+  font-family: "Roboto Slab", serif;
+  transition: all 0.2s ease-in-out;
+}
+.menubtn:hover {
+  transform: scale(2);
+  opacity: 0.2;
+}
+
+.prochainement {
+  background-color: #569c87;
+  color: #f1c64d;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 30px;
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+}
+
+#menupalette {
+  box-shadow: -8px 4px 38px -3px gray;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: #fdfffd;
+  padding: 20px;
+}
+#menupalette h1 {
+  background: -webkit-linear-gradient(0deg, #308d26 0%, #c6f441 68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+  font-size: 3em;
+}
+
+.underlinepalette {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: block;
+}
+.underlinepalette::after {
+  content: "";
+  border-bottom: 3px black solid;
+  display: block;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+.underlinepalette:hover::after {
+  width: 100%;
+}
+
+.traitpaletteg {
+  background: linear-gradient(0.25turn, #308d26, #c6f441);
+  height: 0.2em;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.traitpaletted {
+  background: linear-gradient(0.25turn, #c6f441, #308d26);
+  height: 0.2em;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.recettes {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menunote {
+  box-shadow: -8px 4px 38px -3px gray;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: #fcdfda;
+  padding: 20px;
+}
+#menunote h1 {
+  background: #411f19;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 3em;
+}
+
+.trait_menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.underlinenote {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: block;
+}
+.underlinenote::after {
+  content: "";
+  border-bottom: 3px #411f19 solid;
+  display: block;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+.underlinenote:hover::after {
+  width: 100%;
+}
+
+.dessert {
+  text-align: start;
+}
+
+.traitnote {
+  background-color: #411f19;
+  height: 0.2em;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+#menuchic {
+  box-shadow: -8px 4px 38px -3px gray;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: #fff5fe;
+  padding: 20px;
+}
+#menuchic h1 {
+  background: -webkit-linear-gradient(0deg, #f36704 0%, #6f37df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Gelasio", serif;
+  font-size: 3em;
+}
+
+.trait_menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.typomenu2entre {
+  color: #e16022;
+  font-family: "Roboto Slab", serif;
+}
+
+.typomenu2plat {
+  color: #b24f70;
+  font-family: "Roboto Slab", serif;
+}
+
+.typomenu2dessert {
+  color: #7a3bcc;
+  font-family: "Roboto Slab", serif;
+}
+
+.traitchicentree {
+  background-color: #e16022;
+  height: 0.2em;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.underlinechicentree {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: block;
+}
+.underlinechicentree::after {
+  content: "";
+  border-bottom: 3px #e16022 solid;
+  display: block;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+.underlinechicentree:hover::after {
+  width: 100%;
+}
+
+.traitchicplat {
+  background-color: #b24f70;
+  height: 0.2em;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.underlinechicplat {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: block;
+}
+.underlinechicplat::after {
+  content: "";
+  border-bottom: 3px #b24f70 solid;
+  display: block;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+.underlinechicplat:hover::after {
+  width: 100%;
+}
+
+.traitchicdess {
+  background-color: #7a3bcc;
+  height: 0.2em;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.underlinechicdess {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: block;
+}
+.underlinechicdess::after {
+  content: "";
+  border-bottom: 3px #7a3bcc solid;
+  display: block;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+.underlinechicdess:hover::after {
+  width: 100%;
+}
+
+#menudelice {
+  box-shadow: -8px 4px 38px -3px gray;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+#menudelice h1 {
+  background: -webkit-linear-gradient(0deg, #121ae8 5%, #1eaae8 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+.trait_menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.traitdeli_entree {
+  background-color: #121ae8;
+  height: 0.2em;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.underlinedelientree {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: block;
+}
+.underlinedelientree::after {
+  content: "";
+  border-bottom: 3px #121ae8 solid;
+  display: block;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+.underlinedelientree:hover::after {
+  width: 100%;
+}
+
+.traitdeli_plat {
+  background-color: #125de8;
+  height: 0.2em;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.underlinedeliplat {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: block;
+}
+.underlinedeliplat::after {
+  content: "";
+  border-bottom: 3px #125de8 solid;
+  display: block;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+.underlinedeliplat:hover::after {
+  width: 100%;
+}
+
+.traitdeli_dess {
+  background-color: #1eaae8;
+  height: 0.2em;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.underlinedelidess {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: block;
+}
+.underlinedelidess::after {
+  content: "";
+  border-bottom: 3px #1eaae8 solid;
+  display: block;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+.underlinedelidess:hover::after {
+  width: 100%;
+}
+
+.carte-col {
+  font-family: "Kalam", cursive;
+}
+
+.bounce {
+  position: relative;
+  animation: bounce 0.7s ease infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce2 {
+  position: relative;
+  animation: bounce 0.7s ease infinite;
+  animation-delay: 0.8s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce3 {
+  position: relative;
+  animation: bounce 0.7s ease infinite;
+  animation-delay: 0.9s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(-15px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu1note, .menu2chic, .menu3delice, .menu4palette {
+    width: 40%;
+    margin: 5%;
+  }
+  .menu1note h2, .menu2chic h2, .menu3delice h2, .menu4palette h2 {
+    font-size: 2em;
+  }
+
+  #menunote, #menuchic, #menudelice, #menupalette {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 852px) {
+  .menu1note, .menu2chic, .menu3delice, .menu4palette {
+    width: 90%;
+    display: flex;
+    margin: 0 0 10% 0;
+  }
+
+  #menunote, #menuchic, #menudelice, #menupalette {
+    max-width: 80%;
+    font-size: 1em;
+  }
+  #menunote h1, #menuchic h1, #menudelice h1, #menupalette h1 {
+    font-size: 2em;
+  }
+
+  .footer {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    font-size: 3.5em;
+  }
+
+  .prochainement {
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  .recettes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
