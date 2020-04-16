@@ -5,30 +5,6 @@
 /*color menu chic*/
 /*color menu delice*/
 /*color background palette */
-.footer {
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-  font-size: 2rem;
-  margin-top: 30px;
-  /*position:fixed;
-  bottom: 0;*/
-  background-color: #569c87;
-  color: #f1c64d;
-  font-family: "Roboto Slab", serif;
-  margin-bottom: 30px;
-}
-.footer a {
-  color: #f1c64d;
-  display: block;
-  align-self: center;
-}
-.footer a:hover {
-  animation: shake 0.5s infinite;
-}
-
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -58,6 +34,35 @@
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+.footer {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 30px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0 !important;
+  background-color: #569c87;
+  color: #f1c64d;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 30px;
+}
+.footer a {
+  color: #f1c64d;
+  display: block;
+  align-self: center;
+}
+.footer a:hover {
+  animation: shake 0.5s infinite;
+}
+
+footer {
+  height: 90px;
+}
+
 .header {
   height: 120px;
   margin: auto;
@@ -95,9 +100,11 @@
   flex-direction: column;
   background-color: #fcdfda;
   padding: 20px;
-  color: #411f19;
   font-family: "Croissant One", cursive;
   font-size: 1.3em;
+}
+.menu1note h2, .menu1note a {
+  color: #411f19;
 }
 
 .nota {
@@ -236,7 +243,7 @@ a {
 }
 .underlinepalette::after {
   content: "";
-  border-bottom: 3px black solid;
+  border-bottom: 3px #50a32c solid;
   display: block;
   width: 0;
   transition: all 0.2s ease-in-out;

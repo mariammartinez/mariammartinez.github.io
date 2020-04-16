@@ -8,8 +8,11 @@
     @include pages;
     @include orientationtext-menu;
     @include fond-menu($couleurfond-m1note);
-    @include textecolormenu1note;
     @include text-police($fontmenu1note);
+    h2, a{
+        @include textecolormenu1note;
+    }
+    
 
 }
 .nota{
@@ -82,7 +85,7 @@ a{
     }
 }
 .underlinepalette{
-    @include underline (black);
+    @include underline ($colorunderlinepalette);
 }
 
 .traitpaletteg{
