@@ -264,3 +264,28 @@ a{
     }
 
 }
+
+@media screen and (min-width: 1570px){
+    .menu1note,.menu2chic,.menu3delice,.menu4palette{
+        width: 30%;
+        display: flex;
+        margin: 0 10% 5% 10% ;   
+        height: 700px;
+        h2{
+            font-size: 2.5em;
+        }  
+    }
+    .header{
+            font-size: 5em;
+    }
+
+    .prochainement{
+        width: 50%;
+        font-size: 2.5em;
+
+    }
+    
+
+    
+
+}
